@@ -18,16 +18,16 @@ const images = [{
 // galleryList.classList.add('container');
 // galleryList.classList.add('list');
 const galleryImages = document.querySelector('#gallery');
-
+galleryImages.classList.add('list');
+galleryImages.classList.add('container');
 
 const createListImages = images.map((im) => {
     const li = document.createElement('li');
     li.insertAdjacentHTML(
         'beforeend',
-        `<img src=${im.url} alt=${im.alt.replace(/ /g, '_')} width=420 height=250>`,
+        `<img src=${im.url} alt=${im.alt.replace(/ /g, '-')} width=420 height=250>`,
     );
     return li;
 });
 galleryImages.append(...createListImages);
 
-galleryImages.classList.add('list');

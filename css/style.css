@@ -1,4 +1,29 @@
-.list  {
- list-style: none;   
- border: 2px, solid, blue;
+h2 {
+    color: red
 }
+
+.container {
+    display: flex;
+    /* flex-direction:	column; */
+}
+
+.list {
+    justify-content: space-around;
+    list-style: none;
+    background-color: cadetblue;
+}
+img{
+    width: 280px;
+    height: 210px;
+}
+#validation-input {
+    border: 3px solid #bdbdbd;
+  }
+  
+  #validation-input.valid {
+    border-color: #4caf50;
+  }
+  
+  #validation-input.invalid {
+    border-color: #f44336;
+  }
